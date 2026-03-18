@@ -1,0 +1,14 @@
+name: C Build and Test
+on: [push] # Runs every time you upload code
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Uses a Linux virtual machine
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # Downloads your code to the VM
+
+      - name: Compile and Run Tests
+        run: |
+          chmod +x test.sh
+          ./test.sh
