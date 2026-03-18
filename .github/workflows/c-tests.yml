@@ -10,5 +10,5 @@ jobs:
 
       - name: Compile and Run Tests
         run: |
-          chmod +x test.sh
-          ./test.sh
+          chmod +x src/test.sh
+          .src/test.sh
